@@ -1,4 +1,4 @@
-import LogoWhite from '../assets/logoWhite.png'
+import LogoWhite from '../assets/logowhite.png'
 import LogoBlack from '../assets/logoBlack.png'
 import { useSelector } from 'react-redux'
 
