@@ -1,7 +1,6 @@
-import LogoWhite from '../assets/logoWhite.png'
+import LogoWhite from '../assets/logowhite.png'
 import LogoBlack from '../assets/logoBlack.png'
 import { useDispatch, useSelector } from 'react-redux'
-import {NavLink} from 'react-router-dom'
 import moon from '../assets/moon.png'
 import sun from '../assets/sun.png'
 import { useEffect, useRef, useState } from 'react'
