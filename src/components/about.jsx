@@ -19,7 +19,7 @@ const About = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.5 } // Elementning yarmini ko'rsatganda animatsiya boshlanadi
+      { threshold: 0.3 } // Elementning yarmini ko'rsatganda animatsiya boshlanadi
     );
 
     // Observerni elementga o'rnatamiz

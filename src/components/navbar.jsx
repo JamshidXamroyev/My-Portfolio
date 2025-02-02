@@ -42,19 +42,20 @@ const Navbar = () => {
       </div>
 
       {/* Navugation */}
-      <ul className={`md:w-1/2 w-full flex md:justify-around justify-center items-center gap-4 max-md:py-6 max-md:bg-white max-md:text-black ${darkMode ? "text-white" : ""} max-md:nav duration-500 max-md:flex-col max-md:absolute ${open ? "top-0" : "-top-[600%]"}`}>
+      <ul className={`md:w-1/2 w-full flex md:justify-around justify-center items-center gap-4 max-md:py-6 max-md:bg-white max-md:text-black ${darkMode ? "text-white" : ""} duration-500 max-md:flex-col max-md:absolute left-0 ${open ? "top-0" : "-top-[600%]"}`}>
         {items.map((item, i) => (
           <a key={i} href={`#${item}`} ref={link} onClick={() => setActive(item)} className={`cursor-pointer md:text-xl ${item === active && "text-[#00ccff]"} capitalize font-semibold duration-100 hover:text-[#00ccff]`}>{item}</a>
         ))}
+        {open && (
+            <i class="fa-solid fa-xmark text-2xl text-black cursor-pointer max-md:absolute top-4 right-4 z-[2]" onClick={() => setOpen(false)}></i>
+          )}
       </ul>
 
 
       {/* Settings */}
       <div className='w-full flex justify-end md:px-12 max-md:gap-2'>
         <div className='md:hidden flex justify-center items-center'>
-          {open ? (
-            <i class="fa-solid fa-xmark text-2xl text-black duration-1000 cursor-pointer absolute top-4 right-4 z-[12424234234243]" onClick={() => setOpen(false)}></i>
-          ) : (
+          {!open && (
             <i class="fa-solid fa-bars text-2xl cursor-pointer" onClick={() => setOpen(true)}></i>
           )}
         </div>

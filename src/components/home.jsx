@@ -5,7 +5,7 @@ import FiverIcon from '../assets/fiverr.png'
 const Home = () => {
   const {darkMode} = useSelector(state => state.mode)
   return (
-    <section className={`md:py-24 max-md:pt-24 flex justify-between items-center gap-3 w-full`} id="home">
+    <section className={`md:py-24 max-md:pt-24 max-md:h-[80vh] flex justify-between items-center gap-3 w-full`} id="home">
       {/* My info */}
       <div className="w-full flex flex-col items-start gap-3 mega-fadein">
         <h2 className="md:text-2xl opacity-80">Hello There!</h2>
